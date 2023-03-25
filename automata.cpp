@@ -14,7 +14,7 @@ enum State { OPENED, CLOSED, };
 enum Action { PAY, TURN, };
 
 const char* ActionName[2] = { "Pay ", "Turn" };
-const char* StateName[3] = { "Opened", "Closed", "Payed " };
+const char* StateName[3] = { "Opened", "Closed" };
 
 State change_state(State currentState, Action action) {
   State new_state = currentState;
